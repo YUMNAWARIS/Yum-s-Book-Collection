@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: rgb(230, 244, 231);
+}
+
+body * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: transparent;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+
+}
+
+.header {
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(158, 221, 178);
+}
+
+.header h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: xx-large;
+    font-family: Verdana;
+    font-weight: 500;
+    color: rgb(33, 103, 56);
+}
+
+.header p {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(33, 103, 56);
+}
+
+.header input[type=text] {
+    width: 70%;
+    padding: 10px 15px;
+    border: transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(213, 245, 219);
+    color: rgb(33, 103, 56);
+    transition-duration: 1s;
+}
+
+#bookList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    border-left: 3px solid rgb(158, 221, 178);
+}
+
+.book .title {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    display: inline;
+    width: 100%;
+    padding-left: 15px;
+    color: rgb(33, 103, 56);
+}
+
+.book .dltBtn {
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+    color: red;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.book .dltBtn:hover {
+    color: rgb(235, 149, 88);
+}
+
+
+.addBookForm {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.addBookForm #inputBook {
+    font-size: 15px;
+    width: 70%;
+    padding: 5px;
+    border: 2px solid rgb(158, 221, 178);
+    color: rgb(33, 103, 56);
+    background: transparent;
+    cursor: text;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.addBookForm .addBtn {
+    font-size: 15px;
+
+    margin: 0px 0px;
+    padding: 5px;
+    width: 60px;
+    border: 2px solid rgb(158, 221, 178);
+    color: rgb(33, 103, 56);
+    background: transparent;
+    transition-duration: 1s;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.addBookForm .addBtn:hover {
+    border: 1px solid rgb(175, 244, 175);
+    color: rgb(241, 251, 241);
+    background: rgb(48, 122, 76);
+}

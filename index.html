@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yum's Books Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header" id="header">
+            <h1>Yum's Book Collection</h1>
+            <p>My Personal ninja Book List</p>
+            <form class="search-form" id="search-form">
+                <label for="searchedBook"></label>
+                <input type="text" name="searchedBook" id="searchedBook" placeholder="Search Books">
+            </form>
+        </div>
+
+        <div class="BookListSection">
+            <ul class="list" id="bookList">
+                <li class="book" id="book">
+                    <span class="title">Clean Code</span>
+                    <button class="dltBtn">Delete</button>
+                </li>
+
+                <li class="book" id="book">
+                    <span class="title">Clean Architecture</span>
+                    <button class="dltBtn">Delete</button>
+                </li>
+
+                <li class="book" id="book">
+                    <span class="title">The fault in our stars</span>
+                    <button class="dltBtn">Delete</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="AddBookSection">
+            <form class="addBookForm" id="add">
+                <label for="inputBook"></label>
+                <input type="text" id="inputBook" class="inputBook" placeholder="Enter Book Title..">
+                <button class="addBtn" id="addBtn">Add</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
